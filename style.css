@@ -69,9 +69,11 @@ body {
   font-size: 30px;
 }
 .home .home-content .text-2 {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
-  margin-left: -3px;
+  text-align: left;
+  justify-content: center;
+  /* margin-left: -3px; */
   margin-top: 5px;
 }
 .home .home-content a {
@@ -292,7 +294,7 @@ section {
   justify-content: space-between;
 }
 
-.skills .skills-content .left {
+.skills .skills-content .column {
   width: calc(50% - 30px);
 }
 .skills .skills-content .left .text {
@@ -361,4 +363,268 @@ section {
 }
 .skills-content .right .sql::before {
   width: 60%;
+}
+/* =============================================== */
+/* blog */
+
+.blog {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.blog .max-width p {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.blog .tittle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 60px 0;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.blog .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  left: 50%;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.blog .tittle::after {
+  content: "Interesting";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  color: #127960;
+  font-size: 16px;
+  padding: 5px;
+  background: #050505;
+  transform: translateX(-50%);
+}
+.blog .blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.blog .blog-content .part {
+  width: calc(35% - 20px);
+  background: #050505;
+  border-radius: 5px;
+  padding: 20px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.blog .blog-content .part:hover {
+  background: #127960;
+}
+.blog .blog-content .part .box {
+  transition: all 0.3s ease;
+}
+.blog .blog-content .part:hover .box {
+  transform: scale(1.05);
+}
+.blog .blog-content .part .text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.blog .blog-content .part p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+.blog .blog-content .part img {
+  width: 287px;
+  height: 262px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 5px solid #127960;
+  transition: all 0.3s ease;
+}
+.blog .subs {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  border: 1px solid #050505;
+  border-radius: 5px;
+  background: #222;
+}
+.blog .subs h2 {
+  float: left;
+  font-size: 16px;
+  color: red;
+}
+.blog .subs .onebx {
+  float: right;
+  margin-top: 15px;
+}
+.newsletter .conatainer {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.newsletter {
+  padding: 35px;
+  color: #ffffff;
+  background: #222;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.newsletter h1 {
+  float: left;
+  margin-top: -20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.newsletter form {
+  float: right;
+  margin-top: -20px;
+}
+.newsletter input[type="email"] {
+  padding: 15px;
+  height: 25px;
+  width: 250px;
+  border: 2px solid gray;
+  margin-right: 10px;
+}
+.newsletter #btn {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background: #127960;
+  transition: all 0.3s ease;
+}
+.newsletter #btn:hover {
+  background: #fff;
+  color: #127960;
+}
+/* ===================================================== */
+/* Project */
+
+.project {
+  color: #fff;
+  background: rgb(26, 25, 25);
+}
+.project .max-width p {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project .tittle {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+.project .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  left: 50%;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.project .tittle::after {
+  content: "What I Done";
+  position: absolute;
+  font-size: 16px;
+  bottom: -12px;
+  left: 50%;
+  color: #127960;
+  padding: 5px;
+  background: rgb(26, 25, 25);
+  transform: translateX(-50%);
+}
+.project .project-content {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  justify-content: space-between;
+}
+.project .project-content .part {
+  width: calc(34% - 20px);
+  background: #222;
+  border: 1px solid #127960;
+  border-radius: 5px;
+  /* padding: 20px 25px; */
+  text-align: center;
+}
+.project .project-content .part img {
+  width: 320px;
+  height: 460px;
+  padding-top: 15px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.project .project-content .part:hover {
+  background: #050505;
+}
+.project .project-content .part .box {
+  transition: all 0.3s ease;
+}
+.project .project-content .part:hover .box {
+  transform: scale(1.05);
+}
+.project .text-2 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 20px 10px;
+  text-align: center;
+  justify-content: center;
+}
+.project .text-2 span {
+  color: #127960;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* ==================================================== */
+/* Tesitimonial  */
+.testm {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.testm .tittle {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.testm .tittle::before {
+}
+.testm .tittle::after {
+}
+
+.testm .max-width p {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
 }
