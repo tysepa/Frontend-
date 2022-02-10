@@ -617,8 +617,25 @@ section {
   text-align: center;
 }
 .testm .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  left: 50%;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
 }
 .testm .tittle::after {
+  content: "what you talk";
+  position: absolute;
+  font-size: 16px;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  color: #127960;
+  background: #050505;
+  transform: translateX(-50%);
 }
 
 .testm .max-width p {
@@ -627,4 +644,193 @@ section {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
+  margin-bottom: 20px;
+}
+.testm .carousel .card {
+  background: #222;
+  border-radius: 5px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.testm .carousel .card:hover {
+  background: #127960;
+}
+.testm .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.testm .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.testm .carousel .card .text {
+  display: flex;
+  font-size: 12px;
+  font-family: 500;
+  margin: 10px 0 7px 0;
+}
+.testm .carousel .card .text h1 {
+  color: #127960;
+  margin-top: 55px;
+}
+.testm .carousel .card:hover .text h1 {
+  color: #fff;
+}
+.testm .carousel .card .box p {
+  font-size: 14px;
+}
+.testm .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #050505;
+  transition: all 0.3s ease;
+}
+.testm .carousel .card:hover img {
+  border-color: #fff;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #127960 !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #127960 !important;
+}
+/* ===================================================== */
+/* contanct */
+.Contanct {
+  background: rgb(26, 25, 25);
+  color: #fff;
+}
+.Contanct .tittle {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.Contanct .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  left: 50%;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.Contanct .tittle::after {
+  content: "Get in touch";
+  position: absolute;
+  font-size: 16px;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  color: #127960;
+  background: rgb(26, 25, 25);
+  transform: translateX(-50%);
+}
+.Contanct .contanct-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contant .contanct-content .column {
+  width: calc(50% - 30px);
+}
+.contanct .contanct-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.Contanct .contanct-content .left p {
+  text-align: justify;
+}
+.Contanct .contanct-content .left .icons {
+  margin: 10px 0;
+}
+.Contanct .contanct-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.Contanct .contanct-content .row .info {
+  margin-left: 30px;
+}
+.Contanct .contanct-content .row i {
+  font-size: 25px;
+  color: #127960;
+}
+.Contanct .contanct-content .info .head {
+  font-weight: 500;
+}
+.Contanct .contanct-content .info .sub-title {
+  color: #fff;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background: #127960;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5em;
+  padding: 0.8em 2em;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+.Contanct .contanct-content .right {
+  width: 50%;
+}
+.Contanct .contanct-content iframe {
+  /* width: 50%; */
+  height: 500px;
+  margin-top: 120px;
+}
+.ftr {
+  width: 100%;
+  height: 5em;
+  color: #fff;
+  border: 2px solid #050505;
+  background: #127960;
+}
+.ftr h2 {
+  float: right;
+  margin-top: 25px;
 }
