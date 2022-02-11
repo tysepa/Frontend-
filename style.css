@@ -23,8 +23,14 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 15px 0px;
+  padding: 30px 0px;
   font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: #127960;
+  z-index: 999;
 }
 .navbar .logo a {
   color: #fff;
@@ -46,12 +52,24 @@ body {
 .navbar ul li a:hover {
   color: #127960;
 }
+.navbar.sticky ul li a:hover {
+  color: #fff;
+}
+.navbar.sticky ul li a .current {
+  color: #fff;
+}
 .navbar ul li {
   list-style: none;
   display: inline-block;
 }
 .navbar ul li .current {
   color: #127960;
+}
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
 }
 .home {
   display: flex;
@@ -471,10 +489,10 @@ section {
   float: right;
   margin-top: 15px;
 }
-.newsletter .conatainer {
+.newsletter .container {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .newsletter {
@@ -814,6 +832,7 @@ input[type="submit"] {
   display: inline-block;
   width: 100%;
   cursor: pointer;
+  /* margin-bottom: -220px; */
 }
 .Contanct .contanct-content .right {
   width: 50%;
@@ -822,6 +841,7 @@ input[type="submit"] {
   /* width: 50%; */
   height: 500px;
   margin-top: 120px;
+  margin-bottom: -120px;
 }
 .ftr {
   width: 100%;
@@ -833,4 +853,166 @@ input[type="submit"] {
 .ftr h2 {
   float: right;
   margin-top: 25px;
+}
+/* responsive media query start */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 250px;
+  }
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding: 60px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  .navbar .menu li a:hover {
+    padding: 10px 15px;
+    background: #127960;
+  }
+  .home .home-content .text-2 {
+    font-size: 12px;
+  }
+  .home .home-content a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .right .text p {
+    font-size: 14px;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card,
+  .blog .blog-content .part,
+  .project .project-content .part {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .newsletter .container h1 {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .newsletter #btn {
+    display: flex;
+    width: 30%;
+    float: right;
+  }
+  .newsletter form input[type="email"] {
+    width: 60%;
+    margin-left: ;
+  }
+}
+@media (max-width: 690) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 30px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .services .serv-content .card,
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 590px) {
+  .home {
+    background-size: 150% 100%;
+  }
+  .home .home-content .text-1 {
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 14px;
+  }
+  .about .about-content .right .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .services .serv-content .card,
+  .skills .skills-content .column,
+  .blog .blog-content .part,
+  .project .project-content .part,
+  .Contanct .contanct-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .newsletter {
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  .newsletter .container h1 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  .newsletter #btn {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+  .newsletter form input[type="email"] {
+    width: 100%;
+  }
+  .Contanct .contanct-content iframe {
+    width: 100%;
+    margin-bottom: -120px;
+  }
+
+  .ftr h2 {
+    float: right;
+    margin-top: 25px;
+  }
 }
