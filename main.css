@@ -74,11 +74,12 @@
   padding: 10px 20px;
   outline: none;
   font-weight: 400;
+  background: #fff;
   border: 1px solid #607d8b;
   font-size: 16px;
   letter-spacing: 1px;
   color: #607d8b;
-  background: transparent;
+  /* background: transparent; */
   border-radius: 30px;
 }
 .login .content .form .inputbx input[type="submit"] {
@@ -106,15 +107,15 @@
   color: #1478bb;
 }
 .login .content .form h3 {
-  color: #607d8b;
-  text-align: center;
+  color: #127960;
+  /* text-align: center; */
   margin: 50px 0 10px;
   font-weight: 500;
 }
 .login .content .form .sci {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .login .content .form .sci li {
   list-style: none;

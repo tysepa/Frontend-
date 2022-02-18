@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>My BRAND</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">  -->
 </head>
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Epaphrodis.E</a></div>
-            <ul class="menu">
-                <li><a href="#"><span class="current">Home</span></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contanct">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+            
+            <div class="menu-wrap">
+        
+                <input type="checkbox" class="toggler">
+                <div class="humburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+
+                                <li><a href="#"><span class="current">Home</span></a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contanct">Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <section class="home" id="home">
         <!-- <img src="images/home.jpg" alt=""> -->
@@ -37,7 +50,7 @@
                 <div class="text-1">  I am Epaphrodis Tuyisunge</div>
                 <div class="text-2"> I have ability to work on both the back-end and front-end.</div>
                 <a href="#about">About Me</a>
-                <a href="login.html">Sign In</a>
+                <!-- <a href="login.html">Sign In</a> -->
             </div>
         </div>
     </section>
@@ -205,7 +218,7 @@
         </div>
     </section>
 
-    <section class="testm" id="testm">
+    <!-- <section class="testm" id="testm">
         <div class="max-width">
             <h2 class="tittle">Testimonials</h2>
             <p>Sturnning services ipsum dolor sit amet, consectetur odispiscing elit. lorem <br>
@@ -284,7 +297,7 @@
                     
                 </div>
         </div>
-    </section>
+    </section> -->
     <section class="Contanct" id="contanct">
         <div class="max-width">
             <h2 class="tittle">Contanct</h2>
@@ -327,6 +340,8 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         
                             <input type="submit" class="send-message-cta" value=" send-message">
+                            <p>I am happy to get your message. This part of Mine to answer you <span "><a href="login.html"   style="color:#127960";>login</a></span>
+                            </p>
                         </form>
                     </div>
                 </div>
