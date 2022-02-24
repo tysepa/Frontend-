@@ -30,9 +30,19 @@ body {
 /* .navbar {
 } */
 .navbar .logo {
-  padding: 15px 0;
+  padding: 5px 0;
   background: #127960;
   z-index: 999;
+}
+.navbar .log span {
+  height: 90px;
+  padding: 1rem 0rem 1rem 2rem;
+  color: #fff;
+}
+.navbar span {
+  color: #fff;
+  display: inline-block;
+  padding-right: 1rem;
 }
 .navbar .logo a {
   color: #fff;

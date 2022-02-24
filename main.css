@@ -132,7 +132,7 @@
 .login .content .form .sci li:hover {
   background: #127960;
 }
-.login .content .form .sci li img {
+.login .content .form .sci li i {
   transform: scale(0.5);
   filter: invert(1);
 }

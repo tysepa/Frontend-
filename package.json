@@ -1,0 +1,27 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tysepa/Frontend-.git"
+  },
+  "author": "Epa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tysepa/Frontend-/issues",
+    "build": "webpack"
+  },
+  "homepage": "https://github.com/tysepa/Frontend-#readme",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "firebase": "^9.6.7"
+  }
+}
