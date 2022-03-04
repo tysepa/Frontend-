@@ -26,3 +26,4 @@ db.collection('users').get().then(querySnapshot =>{
      });
     })
 })
+// firebase connect

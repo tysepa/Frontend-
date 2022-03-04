@@ -107,5 +107,3 @@ function edit_post(){
     alert('Updated')
 }
 }
-
-//uploads function
