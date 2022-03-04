@@ -62,18 +62,18 @@
 }
 .login .content .form .inputbx span {
   font-size: 16px;
+  font-weight: 300;
   margin-bottom: 5px;
   display: inline-block;
   color: #127960;
   font-weight: 300;
-  font-size: 16px;
   letter-spacing: 1px;
 }
 .login .content .form .inputbx input {
   width: 100%;
   padding: 10px 20px;
   outline: none;
-  font-weight: 400;
+  font-weight: 300;
   background: #fff;
   border: 1px solid #607d8b;
   font-size: 16px;
@@ -103,14 +103,19 @@
 .login .content .form .inputbx p {
   color: #127960;
 }
+.login .content .form .inputbx #nl {
+  font-size: 16px;
+  font-weight: 300;
+}
 .login .content .form .inputbx p a {
   color: #1478bb;
 }
 .login .content .form h3 {
   color: #127960;
   /* text-align: center; */
+  font-size: 16px;
   margin: 50px 0 10px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .login .content .form .sci {
   display: flex;
@@ -124,7 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #607d8b;
+  background: rgb(44, 43, 43);
   border-radius: 50%;
   margin: 0 7px;
   cursor: pointer;
@@ -135,6 +140,7 @@
 .login .content .form .sci li i {
   transform: scale(0.5);
   filter: invert(1);
+  font-size: 65px;
 }
 
 @media (max-width: 768px) {

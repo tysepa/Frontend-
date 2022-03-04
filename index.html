@@ -7,6 +7,10 @@
     <title>My BRAND</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -155,30 +159,13 @@
         <div class="max-width">
             <h2 class="tittle">My Blog</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias quia qui voluptatibus ex suscipit minima iste quo dolorum nostrum, dolor ratione fugiat! Nam, voluptate!</p>
-            <div class="blog-content">
-                <div class="part">
-                    <div class="box">
-                        <img src="images/dRG.jpg" alt="">
-                        <div class="text">The way you get the right colors  uses When you design a website?</div>
-                        <p>Whether you’re building your new site’s brand from scratch, or are rethinking the palette of your existing website, this guide will help you choose the right color scheme.</p>
-                    </div>
-                </div>
-                <div class="part">
-                    <div class="box">
-                        <img src="images/tg.jpg" alt="">
-                        <div class="text">The way you get the right colors  uses When you design a website?</div>
-                        <p>Whether you’re building your new site’s brand from scratch, or are rethinking the palette of your existing website, this guide will help you choose the right color scheme.</p>
-                    </div>
-                </div>
-                <div class="part">
-                    <div class="box">
-                        <img src="images/d_c.jpeg" alt="">
-                        <div class="text">The way you get the right colors  uses When you design a website?</div>
-                        <p>Whether you’re building your new site’s brand from scratch, or are rethinking the palette of your existing website, this guide will help you choose the right color scheme.</p>
-                    </div>
-                </div>
+            <div class="blog-content" id="posts">
+                
             </div>
-            <div class="newsletter" id="newsletter">
+            
+        </div>
+    </div>
+     <div class="newsletter" id="newsletter">
                 <div class="container">
                     <h1>Subscribe to our newsletter</h1>
                     <form >
@@ -187,8 +174,6 @@
                     </form>
                 </div>
              </div>
-        </div>
-    </div>
 
     <section class="project" id="project">
         <div class="max-width">
@@ -333,7 +318,7 @@
         
                         <form class="form">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="fullName" required>
                             <label for="name">Email</label>
                             <input type="email" id="email" name="email" required>
                             <label for="message">Message</label>
@@ -359,8 +344,10 @@
 
 
     </footer>
-     
-
-    <script src="main.js"></script>
+    <script src="./conf/confg.js"></script> 
+    <script src="./crud/create.js"></script>
+    <script src="./script.js"></script>
+    <script src="./crud/display.js"></script>
+    <script src="./conf/stopp.js"></script>
 </body>
 </html> 
