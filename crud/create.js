@@ -23,3 +23,4 @@ db.collection('users').get().then(querySnapshot =>{
         console.log(doc.data());
     })
 });
+// firebase connect

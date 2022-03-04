@@ -73,3 +73,4 @@ const upload=()=>{
 const anyThing = ()=>{
     alert(TypeError);
 }
+// default

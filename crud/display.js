@@ -22,4 +22,3 @@ function getdata(){
     })
 }
 
-//good at one
