@@ -68,3 +68,8 @@ const upload=()=>{
     })
 
 };
+// write any thing here
+
+const anyThing = ()=>{
+    alert(TypeError);
+}
