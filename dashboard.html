@@ -325,15 +325,20 @@
             <div class="container mt-2">
                 <div class="card">
                     <div class="card-body">
-                       <form id="post-form">
-                           <center><h3>Make A Blog</h3></center>
-                           <!-- <textarea name=""  class="form-control" cols="30" rows="10" id="post" placeholder="Title"></textarea> -->
-                           <textarea name=""  class="form-control" cols="30" rows="10" id="post" placeholder="Write your idea!"></textarea>
-                           <input type="file" class="form-control" id="image" accept="images/">
-                           <div class="text-center">
-                               <button type="button" class="btn btn-success" onclick="upload()" >Upload</button>
-                           </div>
-                       </form>
+                      <center>
+
+                          <form id="post-form" style="width: 500px; padding: 1rem;">
+                              <center><h3>Make A Blog</h3></center>
+                             
+                                <textarea name=""  class="text" cols="10" rows="5" id="number" placeholder="Number"></textarea>
+                                <textarea name=""  class="text" cols="30" rows="10" id="title" placeholder="Title"></textarea>
+                              <textarea name=""  class="form-control" cols="30" rows="10" id="post" placeholder="Write your idea!"></textarea>
+                              <input type="file" class="form-control" id="image" accept="images/">
+                              <div class="text-center">
+                                  <button type="button" class="btn btn-success" onclick="upload()" >Upload</button>
+                              </div>
+                          </form>
+                      </center>
                     </div>
                 </div>
                 <div class="row mt-4" id="posts">

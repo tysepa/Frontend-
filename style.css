@@ -471,11 +471,15 @@ section {
   justify-content: space-between;
 }
 .blog .blog-content .part {
+  display: relative;
+  height: 415px;
   width: calc(35% - 20px);
   background: #050505;
   border-radius: 5px;
   padding: 20px 25px;
+  margin-bottom: 3rem;
   text-align: center;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 .blog .blog-content .part .box .btn-edit {

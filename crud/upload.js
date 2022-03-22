@@ -9,6 +9,8 @@ const btnSend = document.getElementById('btn-success')
 function upload() {
 
     var image = document.getElementById('image').files[0];
+    var number = document.getElementById('number').value;
+    var title = document.getElementById('title').value;
     var post = document.getElementById('post').value;
     var imageName = image.name;
     var storageRef = firebase.storage().ref('images/' + imageName);
@@ -23,6 +25,8 @@ function upload() {
     }, function () {
         uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
             firebase.database().ref('blogs/').push().set({
+                number:number,
+                title:title,
                 text: post,
                 imageURL: downloadURL
             }, function (error) {
@@ -58,10 +62,11 @@ function getdata(){
         for(let[key, value] of Object.entries(data)){
             posts_div.innerHTML = "<div class='part'>"+
               "<div class='box'>"+ 
-              "<img  src='"+value.imageURL+"' style ='height:200px;' onclick='select()'>"+
-              "<div class='card-body'><p class='card-text'>"+value.text+"</p>"+
+              "<img id='img' src='"+value.imageURL+"' style ='height:200px;' onclick=''>"+
+              "<p class='text'>"+value.title+"</p>"+"<p class='card-text'>"+value.text+"</p>"+"<p class='card-text'>"+value.number+"</p>"+
               "<button class='btn btn-delet' id='"+key+"'onclick='delete_post(this.id)'>Delete</button>"+
               "<button class='btn btn-edit' id='"+key+"'onclick='edit_post(this.id)'>Edit</button>"+
+              "<button class='btn btn-edit' id='"+key+"'onclick='select_post(this.id)' id='select'>Select</button>"+
               "</div></div></div>"+posts_div.innerHTML;
         }
     })
@@ -78,32 +83,58 @@ function delete_post(key){
         } else {
           txt = "You pressed Cancel!";
         }
-        document.getElementById("mt-2").innerHTML = txt;
+        document.querySelector(".box").innerHTML = txt;
    
     // console.log('deleted well')
 }
+// var image, number, title, post;ss
+// function ready(){
 
-function select(){
-
-    var image = document.getElementById('image').files[0];
-    var post = document.getElementById('post').value;
-    var imageName = image.name;
-    
-    firebase.database().ref('images/' + imageName).on('value', function(snapshot){
-        document.getElementById('post').value = snapshot.val().text;
-        document.getElementById('image').value = snapshot.val().imageURL;
-})
-
+//      image = document.getElementById('image').files[0];
+//      number = document.getElementById('number').value;
+//      title = document.getElementById('title').value;
+//      post = document.getElementById('post').value;
+// }
+// function select_post(){
+//     // ready();
+//          firebase.database().ref('blogs/',+number).on('value', function(snapshot){
+//         document.getElementById('image').files[0]= snapshot.val().imageURL;
+//         document.getElementById('number').value=snapshot.val().number;
+//         document.getElementById('title').value=snapshot.val().title;
+//         document.getElementById('post').value=snapshot.val().text;
+//     });
+// }
 
 function edit_post(){
     getdata();
-
+    var number = document.getElementById('number').value;
+    var title = document.getElementById('title').value;
+    var post = document.getElementById('post').value;
+    
+    
     var updates={
+        title:title,
         text: post,
-        imageURL: downloadURL
+        number: number
+        
     }
 
-    firebase.database().ref('blogs/'+post).update(updates)
+    firebase.database().ref('blogs/'+number).update(updates)
     alert('Updated')
+    // firebase.database().ref('blogs/'+number).remove().then(()=>{
+    
+    // });
 }
-}
+
+// var image = document.getElementById('image').files[0];
+    //  var imageName = image.name;
+    // var storageRef = firebase.storage().ref('images/' + imageName);
+    // var uploadTask = storageRef.put(image);
+
+// function select_post(){
+//     imageName = document.getElementById('image').value;
+//         firebase.database().ref('blogs/'+imageName).on('value', function(){
+//             document.getElementById('img').src =snapshot.val().link;
+//         })
+
+// }
