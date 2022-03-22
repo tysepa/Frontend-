@@ -74,3 +74,22 @@ const anyThing = ()=>{
     alert(TypeError);
 }
 // default
+
+// ====================================================================
+// var image, number, title, post;ss
+// function ready(){
+
+//     image = document.getElementById('image').files[0];
+//     number = document.getElementById('number').value;
+//     title = document.getElementById('title').value;
+//     post = document.getElementById('post').value;
+// }
+// function select_post(){
+//    ready();
+//         firebase.database().ref('blogs/',+number).on('value').then(function(snapshot){
+//        document.getElementById('image').files[0]= snapshot.val().imageURL;
+//        document.getElementById('number').value=snapshot.val().number;
+//        document.getElementById('title').value=snapshot.val().title;
+//        document.getElementById('post').value=snapshot.val().text;
+//    });
+// }

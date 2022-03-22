@@ -15,7 +15,7 @@ function getdata(){
         for(let[key, value] of Object.entries(data)){
             posts_div.innerHTML = "<div class='part'>"+
               "<div class='box'>"+ "<img src='"+value.imageURL+"' style ='height:250px;'>"+
-              "<div class='card-body'><p class='card-text'>"+value.text+"</p>"+
+              "<p class='text'>"+value.title+"</p>"+"<p class='card-text'>"+value.text+"</p>"+
               "<button class='btn btn-edit' id='"+key+"'onclock='display-post(this.id)'>Read More</button>"+
               "</div></div></div>"+posts_div.innerHTML;
         }

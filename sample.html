@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sample.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="./images/dRG.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at accusamus sint, reiciendis nesciunt necessitatibus dicta natus animi quas molestiae vel, assumenda, consectetur et tempore autem rerum. Quod ipsam quo accusantium harum atque error temporibus molestias voluptas laborum quibusdam tempore possimus ullam provident repudiandae deleniti, doloribus modi inventore, obcaecati exercitationem.</p>
+            </div>
+            <a class="more" id="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./images/dRG.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at accusamus sint, reiciendis nesciunt necessitatibus dicta natus animi quas molestiae vel, assumenda, consectetur et tempore autem rerum. Quod ipsam quo accusantium harum atque error temporibus molestias voluptas laborum quibusdam tempore possimus ullam provident repudiandae deleniti, doloribus modi inventore, obcaecati exercitationem.</p>
+            </div>
+            <a class="more" id="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./images/dRG.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at accusamus sint, reiciendis nesciunt necessitatibus dicta natus animi quas molestiae vel, assumenda, consectetur et tempore autem rerum. Quod ipsam quo accusantium harum atque error temporibus molestias voluptas laborum quibusdam tempore possimus ullam provident repudiandae deleniti, doloribus modi inventore, obcaecati exercitationem.</p>
+            </div>
+            <a class="more" id="more"></a>
+        </div>
+    </div>
+
+
+    <script>
+        let st
+        let more = document.getElementById('#more');
+        more = 
+        for(let i=0 ; i<more.length; i++){
+            more[i].addEventListener('click',async function(){
+                try{
+
+                  await more[i].parentNode.classlist.toggle('active')
+                }catch(err){
+                    console.log(err)
+                }
+            })
+        }
+    </script>
+</body>
+</html>
